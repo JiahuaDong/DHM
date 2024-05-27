@@ -242,12 +242,7 @@ We achieved state-of-the-art performance on Simulation dataset. Detailed results
 If you find the code helpful in your resarch or work, please cite the following paper(s).
 
 ```
-@article{chen2023image,
-  title={Image Super-Resolution with Text Prompt Diffusion},
-  author={Chen, Zheng and Zhang, Yulun and Gu, Jinjin and Yuan, Xin and Kong, Linghe and Chen, Guihai and Yang, Xiaokang},
-  journal={arXiv preprint arXiv:2303.06373},
-  year={2023}
-}
+
 ```
 
 ## <a name="acknowledgements"></a>💡 Acknowledgements
