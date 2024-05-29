@@ -5,6 +5,12 @@ Jiahua Dong, Hui Yin, Hongliu Li, Wenbo Li, Yulun Zhang, Salman Khan, Fahad Khan
 
 arXiv 
 
+|                          *Scene 1*                           |                          *Scene 5*                           |                          *Scene 6*                           |                          *Scene 7*                           |
+| :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+| <img src="./figs/scene1.gif"  height=170 width=170> | <img src="./figs/scene5.gif" width=170 height=170> | <img src="./figs/scene6.gif" width=170 height=170> | <img src="./figs/scene7.gif" width=170 height=170> |
+
+---
+
 #### 🔥🔥🔥 News
 
 - **2024-5-29:** This repo is released.
@@ -21,7 +27,7 @@ arXiv
  to explore both global long-range dependencies and local contexts for efficient
  HSI reconstruction. After learning informative parameters to estimate degradation
  patterns of the CASSI system, we use them to scale the linear projection and offer
- noise level for the denoiser (i.e., our proposed DHM). Specifically, our DHM
+ noise level for the denoiser (*i.e.*, our proposed DHM). Specifically, our DHM
  consists of multiple dual hyperspectral S4 blocks (DHSBs) to restore original HSIs.
  Particularly, each DHSB contains a global hyperspectral S4 block (GHSB) to
  model long-range dependencies across the entire high-resolution HSIs using global
@@ -29,9 +35,36 @@ arXiv
  neglect by establishing structured state-space sequence (S4) models within local
  windows. Experiments verify the benefits of our DHM for HSI reconstruction.
 
-![](figs/PromptSR.png)
-
+![](figs/DHM1.png)
+![](figs/DHM2.png)
 ---
+
+## Comparison with State-of-the-art Methods
+
+<div align=center>
+<img src="figs/C.png" width = "350" height = "300" alt="">
+</div>
+
+|  Method        | Params (M) | FLOPS (G) | PSNR  | SSIM  |  Model Zoo   |  Result |   
+:----------------------------------------------------------: | :--------: | :-------: | :---: | :---: | :----------------------------------------------------------: | :-------:| 
+ |  [DAUHST-9stg](https://github.com/caiyuanhao1998/MST)      |    6.15  |     79.50         | 38.36 | 0.967 |  [Repo](https://github.com/caiyuanhao1998/MST) | [Repo](https://github.com/caiyuanhao1998/MST)  |
+ |  PADUT-12stg        |    5.38    |   90.46   | 38.89 | 0.972 | [Google Driver](https://drive.google.com/file/d/1rhgJQ1IeNk0tk3B5bKsrnQfjgaLnWZFZ/view?usp=sharing) | [Google Driver](https://drive.google.com/drive/folders/1q3Vktwf1K6Od3uJVKXZaIBTtSM4vzkRR?usp=sharing) |
+ |  RDLUF-Mix*S2*-9stg        |    1.89    |    115.34   |  39.57 | 0.974 | [Repo](https://github.com/ShawnDong98/RDLUF_MixS2) | [Repo](https://github.com/ShawnDong98/RDLUF_MixS2) |
+ |   DERNN-LNLT-3stg      |   0.65  |      27.41         |  38.65 | 0.973 |  - | -  |
+ |  [ DERNN-LNLT-5stg](https://github.com/ShawnDong98/DERNN-LNLT)      |    0.65  |     45.60         | 39.38 | 0.973 |  [Repo](https://github.com/ShawnDong98/DERNN-LNLT) | [Repo](https://github.com/ShawnDong98/DERNN-LNLT)  |
+ |  [ DERNN-LNLT-7stg](https://github.com/ShawnDong98/DERNN-LNLT)      |    0.65  |     63.80         | 39.61 | 0.974 |  [Repo](https://github.com/ShawnDong98/DERNN-LNLT) | [Repo](https://github.com/ShawnDong98/DERNN-LNLT)  |
+ |  [ DERNN-LNLT-9stg](https://github.com/ShawnDong98/DERNN-LNLT)      |    0.65  |     81.99        | 39.93 | 0.976 |  [Repo](https://github.com/ShawnDong98/DERNN-LNLT) | [Repo](https://github.com/ShawnDong98/DERNN-LNLT)  |
+ |  [ DERNN-LNLT-9stg*](https://github.com/ShawnDong98/DERNN-LNLT)      |    1.09  |     134.18         | 40.33 | 0.977 |  [Repo](https://github.com/ShawnDong98/DERNN-LNLT) | [Repo](https://github.com/ShawnDong98/DERNN-LNLT)  |
+ |  DHM-light-3stg        |    0.66    |   26.42  | 38.99 | 0.975 |  [Google Driver] / [Baidu Disk]| [Google Driver] / [Baidu Disk]|
+ |  DHM-light-5stg        |    0.66    |   43.96  | 39.81 | 0.979 | [Google Driver] / [Baidu Disk] | [Google Driver] / [Baidu Disk]|
+ |  DHM-light-7stg        |    0.66    |   61.50  | 40.20 | 0.980 | [Google Driver] / [Baidu Disk] | [Google Driver] / [Baidu Disk]|
+ |  DHM-light-9stg        |    0.66    |   79.04  | 40.41 | 0.981 | [Google Driver] / [Baidu Disk] | [Google Driver] / [Baidu Disk]|
+ |  DHM-3stg        |    0.92    |   36.34  | 39.13| 0.975 |  [Google Driver] / [Baidu Disk] | [Google Driver] / [Baidu Disk]|
+ |  DHM-5stg        |    0.92    |   60.50  | 40.16 | 0.980 | [Google Driver] / [Baidu Disk] | [Google Driver] / [Baidu Disk]|
+ |  DHM-7stg        |    0.92    |   84.65  | 40.34 | 0.981 | [Google Driver] / [Baidu Disk] | [Google Driver] / [Baidu Disk] |
+ |  DHM-9stg        |    0.92    |   108.80 | 40.56 | 0.981 | [Google Driver] / [Baidu Disk] | [Google Driver] / [Baidu Disk] |
+
+
 ## 🔗 Contents
 
 1. [Create Environment](#createenvironment)
@@ -43,7 +76,7 @@ arXiv
 1. [Acknowledgements](#acknowledgements)
 
 ------
-## <a name="createenvironment"></a> Create Environment:
+##  <a name="createenvironment"></a> Create Environment:
 
 - Python >=3.9 (Recommend to use [Anaconda](https://www.anaconda.com/download/#linux))
 
@@ -243,6 +276,7 @@ If you find the code helpful in your resarch or work, please cite the following 
 
 ```
 
+
 ```
 
 ## <a name="acknowledgements"></a>💡 Acknowledgements
@@ -256,4 +290,6 @@ Our code is based on following codes, thanks for their generous open source:
 - [https://github.com/TaoHuang95/DGSMP](https://github.com/TaoHuang95/DGSMP)
 - [https://github.com/mengziyi64/TSA-Net](https://github.com/mengziyi64/TSA-Net)
 - [https://github.com/facebookresearch/detectron2](https://github.com/facebookresearch/detectron2)
+
+
 
