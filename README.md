@@ -3,7 +3,7 @@
 Jiahua Dong, Hui Yin, Hongliu Li, Wenbo Li, Yulun Zhang, Salman Khan, Fahad Khan, "Dual Hyperspectral Mamba for Efficient Spectral
  Compressive Imaging", arXiv, 2024
 
-arXiv 
+[arXiv](https://arxiv.org/abs/2406.00449)
 
 |                          *Scene 1*                           |                          *Scene 5*                           |                          *Scene 6*                           |                          *Scene 7*                           |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
@@ -55,14 +55,14 @@ arXiv
  |  [ DERNN-LNLT-7stg](https://github.com/ShawnDong98/DERNN-LNLT)      |    0.65  |     63.80         | 39.61 | 0.974 |  [Repo](https://github.com/ShawnDong98/DERNN-LNLT) | [Repo](https://github.com/ShawnDong98/DERNN-LNLT)  |
  |  [ DERNN-LNLT-9stg](https://github.com/ShawnDong98/DERNN-LNLT)      |    0.65  |     81.99        | 39.93 | 0.976 |  [Repo](https://github.com/ShawnDong98/DERNN-LNLT) | [Repo](https://github.com/ShawnDong98/DERNN-LNLT)  |
  |  [ DERNN-LNLT-9stg*](https://github.com/ShawnDong98/DERNN-LNLT)      |    1.09  |     134.18         | 40.33 | 0.977 |  [Repo](https://github.com/ShawnDong98/DERNN-LNLT) | [Repo](https://github.com/ShawnDong98/DERNN-LNLT)  |
- |  DHM-light-3stg        |    0.66    |   26.42  | 38.99 | 0.975 |  [Google Driver] / [Baidu Disk]| [Google Driver] / [Baidu Disk]|
- |  DHM-light-5stg        |    0.66    |   43.96  | 39.81 | 0.979 | [Google Driver] / [Baidu Disk] | [Google Driver] / [Baidu Disk]|
- |  DHM-light-7stg        |    0.66    |   61.50  | 40.20 | 0.980 | [Google Driver] / [Baidu Disk] | [Google Driver] / [Baidu Disk]|
- |  DHM-light-9stg        |    0.66    |   79.04  | 40.41 | 0.981 | [Google Driver] / [Baidu Disk] | [Google Driver] / [Baidu Disk]|
- |  DHM-3stg        |    0.92    |   36.34  | 39.13| 0.975 |  [Google Driver] / [Baidu Disk] | [Google Driver] / [Baidu Disk]|
- |  DHM-5stg        |    0.92    |   60.50  | 40.16 | 0.980 | [Google Driver] / [Baidu Disk] | [Google Driver] / [Baidu Disk]|
- |  DHM-7stg        |    0.92    |   84.65  | 40.34 | 0.981 | [Google Driver] / [Baidu Disk] | [Google Driver] / [Baidu Disk] |
- |  DHM-9stg        |    0.92    |   108.80 | 40.56 | 0.981 | [Google Driver] / [Baidu Disk] | [Google Driver] / [Baidu Disk] |
+ |  DHM-light-3stg        |    0.66    |   26.42  | 38.99 | 0.975 |  - | - |
+ |  DHM-light-5stg        |    0.66    |   43.96  | 39.81 | 0.979 | -  | - |
+ |  DHM-light-7stg        |    0.66    |   61.50  | 40.20 | 0.980 | -  | - |
+ |  DHM-light-9stg        |    0.66    |   79.04  | 40.33 | 0.981 | -  | - |
+ |  DHM-3stg        |    0.92    |   36.34  | 39.13| 0.975 |  -  | - |
+ |  DHM-5stg        |    0.92    |   60.50  | 40.16 | 0.980 | - | - |
+ |  DHM-7stg        |    0.92    |   84.65  | 40.34 | 0.981 | - | - |
+ |  DHM-9stg        |    0.92    |   108.80 | 40.50 | 0.981 | - | - |
 
 
 ## 🔗 Contents
@@ -275,8 +275,12 @@ We achieved state-of-the-art performance on Simulation dataset. Detailed results
 If you find the code helpful in your resarch or work, please cite the following paper(s).
 
 ```
-
-
+@article{Dong2024DHM,
+      title={Dual Hyperspectral Mamba for Efficient Spectral Compressive Imaging}, 
+      author={Jiahua Dong and Hui Yin and Hongliu Li and Wenbo Li and Yulun Zhang and Salman Khan and Fahad Shahbaz Khan},
+      year={2024},
+journal={arXiv preprint arXiv:2406.00449}
+}
 ```
 
 ## <a name="acknowledgements"></a>💡 Acknowledgements
